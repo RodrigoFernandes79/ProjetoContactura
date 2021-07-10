@@ -1,0 +1,46 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+body{
+    background-image: url(../not-found/img/notfound.gif);
+    background-size: 100%;
+}
+
+div p{
+    color: snow;
+    text-align:center;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
+    display:inline;
+   position:absolute;
+   right: 250px; 
+   bottom: 115px;
+}
+form{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    display:inline;
+   position:absolute;
+   right: 280px; 
+   bottom: 50px;
+input{
+    margin: 0 25px;
+    padding: 15px 20px 15px 20px;
+    background: rgb(185, 39, 39);
+    color:snow ;
+    border: 2px solid gray ;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px black;
+    cursor: pointer;
+    font-family: 'Yomogi', cursive;
+    font-weight: bold;
+    transition: 2s;
+    } 
+    input:hover{
+        background-color: black;
+        border: 2px solid red;
+        transform: scale(1.2);
+    }  
+ 
+}
