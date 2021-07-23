@@ -11,10 +11,12 @@ import { FormContatosComponent } from './form-contatos/form-contatos.component';
 import { ListaUsuariosComponent } from './lista-usuarios/lista-usuarios.component';
 import { NotFoundComponent } from './sharedComponents/not-found/not-found.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NavbarComponent } from './SharedComponents/navbar/navbar.component';
 //imports do material design
  import {MatCardModule} from '@angular/material/card';
  import {MatButtonModule} from '@angular/material/button';
  import {MatInputModule} from '@angular/material/input';
+ import {MatIconModule} from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     FormUsuariosComponent,
     FormContatosComponent,
     ListaUsuariosComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    NavbarComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -34,7 +38,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MatButtonModule,
     MatInputModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatIconModule
     
 
   ],
