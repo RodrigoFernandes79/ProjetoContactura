@@ -1,14 +1,39 @@
 <app-navbar></app-navbar>
+<!--Título da Lista de Contactos-->
 <section>
     <div class="container_title">
         <h1>CONTATOS</h1>
-    </div>
+    </div>  
 </section>
-
+<!--Botão de adicionar Contactos-->
 <section>
     <div class="container_buttons">
-        <button mat-raised-button color="primary">Primary</button>
+        <button mat-raised-button color="primary">Botao</button>
     </div>
 
+</section>
+<!--Tabela de Lista de Contatos-->
+<section>
+    <div>
+        <table>
+            <!--Thead-->
+            <thead>
+                <tr>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Fone</th>
+                    <th>menu</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let contact of contactsList">
+                    <td data-label="Nome">{{contact.name}}</td>
+                    <td data-label="Email">{{contact.email}}</td>
+                    <td data-label="Fone">{{contact.phone}}</td>
+                    <td>menu</td>
+                </tr>    
+            </tbody>
+        </table>
+    </div>
 </section>
 

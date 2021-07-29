@@ -8,14 +8,13 @@ import { LoginComponent } from './login/login.component';
 import { AuthAdminGuard, AuthGuard } from './service/auth.guard';
 import { NotFoundComponent } from './sharedComponents/not-found/not-found.component';
 
-
 const routes: Routes = [
 {path:'',redirectTo:'/login',pathMatch:'full'},
 {path:'login', component:LoginComponent},
 {path:'lista-contatos',component:ListaContatosComponent,canActivate:[AuthGuard]},
 {path:'lista-usuarios',component:ListaUsuariosComponent,canActivate:[AuthGuard]},
 {path:'form-contatos',component:FormContatosComponent,canActivate:[AuthGuard]},
-{path:'form-usuarios',component:FormUsuariosComponent,canActivate:[AuthAdminGuard]},
+{path:'form-usuarios',component:FormUsuariosComponent,canActivate:[AuthGuard]},
 {path:'**',component: NotFoundComponent}
 ];
 

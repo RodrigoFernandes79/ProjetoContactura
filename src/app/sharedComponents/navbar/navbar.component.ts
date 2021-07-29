@@ -15,8 +15,8 @@ export class NavbarComponent implements OnInit {
   }
 
   putEventsMenu(){
-    const menuDesktop=document.getElementById("menu-desktop");
-    const menuMobile=document.getElementById("menu-mobile");
+    const menuDesktop=document.getElementById('menu-desktop');
+    const menuMobile=document.getElementById('menu-mobile');
     menuMobile.addEventListener('click',function(){
       menuDesktop.classList.toggle('active');
     });
