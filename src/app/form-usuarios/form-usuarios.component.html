@@ -1,23 +1,32 @@
 <app-navbar></app-navbar>
-<section class="container">
-    <h1 class="title">Cadastrar Novo Usuário</h1>
-    <form class="container-form">
+<section >
+    <div class="container">
+        <h1>Cadastro de Usuário</h1>
+    </div>
+</section>
+<section>
+    <form [formGroup]="formUsuarios" >
         <div class="container-input">
-            <div class="input-dados">
-                <label for="email">Email:</label>
-                <input id="email" name="email" type="email"  class="campo">
+            <div >
+                <span>Email:</span>
+                <input formControlName="email" type="text" name="email">
             </div>
-            <div class="input-dados">
-                <label for="password">Senha:</label>
-                <input id="password" name="password" type="password"  class="campo">
-            </div >
-            <div class="input-dados">
-                <label for="name">Nome:</label>
-                <input id="name" name="name" type="text"  class="campo">
+            <div>
+                <span>Senha:</span>
+                <input formControlName="password" type="text" name="senha">
             </div>
-                <label class="checkbox"> <input type="checkbox">Administrador? </label>
-        </div>	
-        <button mat-raised-button  color= "primary" class="container-button">Salvar Usuário</button>
+            <div>
+                <span>Nome:</span>
+                <input formControlName="name" type="text" name="nome">
+            </div>
+            <div class="checkbox">
+                <input formControlName="admin"   type="checkbox">
+                <span>Administrador?</span>
+            </div>
+            <div>
+                <button mat-raised-button  color= "primary" (click)="save()" class="container-button">Salvar Usuário</button>
+            </div>
+        </div>
     </form>
 </section>
 

@@ -1,88 +1,27 @@
 .container{
-    display: grid;
-    grid-template-rows:  auto auto;
-    grid-gap: 0.5em;
+    display:flex;
+    justify-content: center;
+    margin-top: 20px;
   
 }
-.title{
-    display: grid;
-    margin-top: 0.8em;
-    justify-content: center;
-}
-.container-form{
-    justify-content: center;
-    display: grid;
-    grid-gap: 1.6em;
-}
+
 .container-input{
     display: grid;
-    grid-gap: 0.6em;
-}
-.campo{
-    display:block;
-    width: 60vw;
-    height: 1.6em;
-    border-radius: 0.3em;
-    border-color:white;
-    margin-top:0.4em;
-    border-width: 1px;
-}
-.container-button{
-    font-size: 2vw;
-    width: 25vw;
-    margin-left: 1.35vw;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3.5em;
+    margin:20px;
 
-   
-}
+    input{
+        width:100%
+    }
+    .checkbox{
+       display: flex;
+       margin-top: 20px;
+       margin-right:390px;
+       
+       
+    }
+    }
 
 
-@media screen and (min-width:769px){
-    
-    .container{
-        display: grid;
-        grid-template-rows:  auto auto;
-        grid-gap: 1em;
-        
-    
-    }
-    
-    .title{
-        display: grid;
-        grid-row-start: 1;
-        justify-content: center;
-        align-items: center;
-         
-    }
-    
-    .container-form{
-        display: grid;
-        grid-template-rows: auto auto ;
-        grid-gap: 1.5em;
-        align-items: end;
-    
-    }
-    .container-input{
-        display: grid;
-        grid-template-rows: auto auto;
-        grid-template-columns: auto auto;
-        grid-gap: 1.5em;
-        justify-content:center;
-        align-items: end;
-    }
-    .campo{
-        display:block;
-        width: 47vw;
-        height: 2em;
-        margin-top:0.3em;
-        border-color: rgb(219, 217, 217);
-        border-radius: 0.3em;
-        border-width: 1px;
-    }
-    
-    .container-button{
-        width: 12vw;
-        font-size: 1.2vw;
-        margin-left: 1.25vw;
-        
-    }
-}
+

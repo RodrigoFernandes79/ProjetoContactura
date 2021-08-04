@@ -1,3 +1,45 @@
 <app-navbar></app-navbar>
+<section>
+    <div class="container_title">
+        <h1>USUÁRIOS</h1>
+    </div>  
+</section>
+<section>
+    <div class="container_buttons">
+        <button mat-raised-button color="primary" routerLink="/form-contatos">Adicionar Contato</button>
+        <button mat-raised-button color="primary" routerLink="/form-usuarios" >Adicionar Usuário</button>
+    </div>
+
+</section>
+<!--Tabela de Lista de Usuarios-->
+<section>
+    <div>
+        <table>
+            <!--Thead-->
+            <thead>
+                <tr>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Senha</th>
+                    <th scope="col">Admin</th>
+                    
+                    <th>menu</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let user of userList">
+                    <td data-label="Nome">{{user.name}}</td>
+                    <td data-label="Email">{{user.email}}</td>
+                    <td data-label="Senha">{{user.password}}</td>
+                    <td data-label="Admin">{{user.admin}}</td>
+                    <td><div class="container_buttons_table">
+                        <mat-icon (click)="deleteUser(usuarios)">delete</mat-icon>
+                        <mat-icon (click)="editUser(usuarios)">edit</mat-icon>
+                    </div></td>
+                </tr>    
+            </tbody>
+        </table>
+    </div>
+</section>
 
 

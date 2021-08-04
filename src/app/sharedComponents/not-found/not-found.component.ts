@@ -16,7 +16,7 @@ export class NotFoundComponent implements OnInit {
 }
   click1() {
     
-    window.location.assign("https://www.youtube.com/watch?v=oOoBomvuYnw");
+    window.location.assign("https://www.youtube.com/watch?v=1fr1iyhkyVs");
     
 }
 
