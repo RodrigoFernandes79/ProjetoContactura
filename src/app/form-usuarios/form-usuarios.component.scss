@@ -7,7 +7,7 @@
 
 .container-input{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns:1fr 1fr;
     grid-gap: 3.5em;
     margin:20px;
 
@@ -15,12 +15,23 @@
         width:100%
     }
     .checkbox{
-       display: flex;
+      display: grid;
        margin-top: 20px;
-       margin-right:390px;
-       
+       margin-right: 290px;
+       grid-template-columns: auto auto;
+       grid-gap: 2.5em;
+    }
        
     }
+
+@media screen and (max-width:767px) {
+    .container-input{
+        display:grid;
+        grid-template-columns:  auto;  
+        grid-gap: 1.0em;
+        
+        width: 20px;
+    }  
     }
 
 
