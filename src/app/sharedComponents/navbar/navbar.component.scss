@@ -1,19 +1,25 @@
-
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
     
 .navbar{
     padding-bottom: 10px;
     background-color: #F8F9FA;
-    
-    
 }
 .navbar-toogle{
-    position: relative;
-    top: 10px;
-    float: right;
-    font-size: 20px;
-    cursor:pointer;
-    color:black;
+   
+   position: relative;
+   top: 10px;
+   float: right;
+   font-size: 20px;
+   cursor:pointer;
+   color:black;
 }
+
+    
+  
 
 .main-nav{
     list-style-type: none;
@@ -38,11 +44,7 @@
        
     }
 }
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
+
 
 @media screen and(min-width:769px) {
     .navbar{
@@ -52,6 +54,8 @@
         height: 60px;
         align-items: center;
     }
+    
+    
     .main-nav{
         display:flex;
         margin-right: 30px;
@@ -61,10 +65,23 @@
         li{
             margin: 0;
         }
+    }
         .navbar-toogle{
-            display: none;
+           display: none;
         
-        }
+           .container_buttons{
+            align-items: flex-end;
+            display: flex;
+            margin: 20px 20px 20px 0;
+            button{
+                margin-left: 15px;
+                float: none;
+                display: inline-block;
+                
+    
+            }
+           }
+           }
         .nav-links{
             color: black;
             text-decoration: none;
@@ -74,7 +91,7 @@
             color: brown;
         }
     }
-}
+
 .logout{
     cursor:pointer;
 }

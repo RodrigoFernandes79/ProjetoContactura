@@ -17,21 +17,10 @@ export class ListaUsuariosComponent implements OnInit {
   
 
   ngOnInit(): void {
-    this.putEventsMenu();
     this.populateUser();
   }
 
-  putEventsMenu(){
-    const menuDesktop=document.getElementById('menu-desktop');
-    const menuMobile=document.getElementById('menu-mobile');
-    menuMobile.addEventListener('click',function(){
-      menuDesktop.classList.toggle('active');
-    });
-  }
-  logout(){
-    localStorage.removeItem('token');
-    this.router.navigate(['/login'])
-  }
+
   populateUser(){
     for (let i = 0; i < this.collection.count; i++) {
       this.collection.data.push({

@@ -1,5 +1,4 @@
-import { escapeIdentifier } from '@angular/compiler/src/output/abstract_emitter';
-import { variable } from '@angular/compiler/src/output/output_ast';
+
 import { Component, OnInit } from '@angular/core';
 import {  CheckboxRequiredValidator, FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
@@ -18,8 +17,8 @@ export class FormUsuariosComponent implements OnInit {
   formUsuarios = new FormGroup({
     password: new FormControl('',[Validators.required]),
     email: new FormControl('',[Validators.required, Validators.email]),
-    name: new FormControl('',[Validators.required])
-   
+    name: new FormControl('',[Validators.required]),
+    admin:new FormControl('',[Validators.requiredTrue])
   });
   
   
